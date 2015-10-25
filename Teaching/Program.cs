@@ -10,6 +10,8 @@ namespace Teaching
     {
         static void Main(string[] args)
         {
+			// ignore this comment
+			// ^^ ignore that comment... and this one
 
 			Console.WriteLine("Enter a number");
 			int number = Convert.ToInt32(Console.ReadLine());
