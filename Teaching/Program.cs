@@ -10,12 +10,16 @@ namespace Teaching
     {
         static void Main(string[] args)
         {
+			// ignore this comment
+			// ^^ ignore that comment... and this one
 
 			Console.WriteLine("Enter a number");
 			int number = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Enter another number");
 			int number2 = Convert.ToInt32(Console.ReadLine());
-			AddNumbers(number, number2);
+
+			Console.WriteLine("The sum of {0} and {1} is {2}", number, number2, AddNumbers(number, number2));
+			Console.ReadLine();
         }
 
 		static int AddNumbers(int firstNumber, int secondNumber)
