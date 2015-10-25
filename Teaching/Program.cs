@@ -10,20 +10,9 @@ namespace Teaching
     {
         static void Main(string[] args)
         {
-			Console.WriteLine("Enter your age");
-			int userAge = Convert.ToInt32(Console.ReadLine());
-
-			if (userAge < 21)
+			for (int i = 0; i < 10; i++)
 			{
-				Console.WriteLine("You must be at least 21 to enter this bar");
-			}
-			else if (userAge == 21)
-			{
-				Console.WriteLine("You are barely old enough to enter the bar");
-			}
-			else
-			{
-				Console.WriteLine("Welcome to the bar");
+				Console.WriteLine(i);
 			}
 			Console.ReadLine();
         }
