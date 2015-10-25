@@ -15,7 +15,6 @@ namespace Teaching
 			int number = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Enter another number");
 			int number2 = Convert.ToInt32(Console.ReadLine());
-
 			AddNumbers(number, number2);
         }
 
