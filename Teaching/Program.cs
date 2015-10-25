@@ -16,8 +16,8 @@ namespace Teaching
 			int number = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Enter another number");
 			int number2 = Convert.ToInt32(Console.ReadLine());
-            //penis
-			AddNumbers(number, number2);
+			Console.WriteLine("the sum of {0} and {1} is {2}", number, number2, AddNumbers(number, number2));
+			Console.ReadLine();
         }
 
 		static int AddNumbers(int firstNumber, int secondNumber)
