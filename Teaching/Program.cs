@@ -10,20 +10,22 @@ namespace Teaching
     {
         static void Main(string[] args)
         {
-			// ignore this comment
+			Console.WriteLine("Enter your age");
+			int userAge = Convert.ToInt32(Console.ReadLine());
 
-			Console.WriteLine("Enter a number");
-			int number = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine("Enter another number");
-			int number2 = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine("the sum of {0} and {1} is {2}", number, number2, AddNumbers(number, number2));
+			if (userAge < 21)
+			{
+				Console.WriteLine("You must be at least 21 to enter this bar");
+			}
+			else if (userAge == 21)
+			{
+				Console.WriteLine("You are barely old enough to enter the bar");
+			}
+			else
+			{
+				Console.WriteLine("Welcome to the bar");
+			}
 			Console.ReadLine();
         }
-
-		static int AddNumbers(int firstNumber, int secondNumber)
-		{
-			int sum = firstNumber + secondNumber;
-			return sum;
-		}
     }
 }
