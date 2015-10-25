@@ -10,6 +10,19 @@ namespace Teaching
     {
         static void Main(string[] args)
         {
+
+			Console.WriteLine("Enter a number");
+			int number = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter another number");
+			int number2 = Convert.ToInt32(Console.ReadLine());
+
+			AddNumbers(number, number2);
         }
+
+		static int AddNumbers(int firstNumber, int secondNumber)
+		{
+			int sum = firstNumber + secondNumber;
+			return sum;
+		}
     }
 }
